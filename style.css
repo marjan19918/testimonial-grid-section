@@ -1,0 +1,146 @@
+body{
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-weight: 500,600;
+    font-size: 13px;
+     background-color: var(--color-Light-gray);
+     color:var(--color-White) ;
+}
+:root{
+    --color-Light-gray: hsl(0, 0%, 81%);
+    --color-Light-grayish-blue: hsl(210, 46%, 95%);
+   --color-Moderate-violet: hsl(263, 55%, 52%);
+   --color-Very-dark-grayish-blue: hsl(217, 19%, 35%);
+   --color-Very-dark-blackish-blue: hsl(219, 29%, 14%);
+    --color-White: hsl(0, 0%, 100%);
+    line-height: 1.2rem;
+}
+*{
+    padding: 0px;
+    margin: 0px;
+}
+p{
+    opacity: 0.8;
+}
+.main{
+    display: flex;
+    flex-direction: row;
+    
+width: 1200px;
+height:700px ;
+justify-content: space-around;
+align-items: center;
+margin: auto;
+
+}
+.leftcont{
+    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: right;
+    
+    padding-left: 87px;
+}
+.rightcont{
+    padding-right: 45px;
+}
+.section{
+    margin: 5px;
+    border-radius: 5px;
+    
+    height: 280px;
+    
+    width: 250px;
+    
+}
+.biger{
+    min-width: 540px;
+}
+.right{
+    border-radius: 5px;
+    
+    height: 567px;
+    
+    width: 250px;
+}
+.paragraph{
+padding-top: 15px;
+}
+.insection{
+    padding: 20px;
+}
+.insection h3{
+    padding-bottom: 13px;
+    font-size: 21px;
+    line-height: 22px;
+}
+
+.sectiontop{
+    display: flex;
+    flex-direction: row;
+}
+.name{
+    margin-left: 20px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.sectiontop img{
+border-radius: 50px;
+
+}
+.bold{
+    font-weight: bolder;
+    
+}
+
+.white{
+    background-color: var(--color-White);
+    color: var(--color-Very-dark-blackish-blue);
+    /* z-index: 2; */
+}
+.blue{
+    background-color: var(--color-Moderate-violet);
+}
+.dark-blue{
+    background-color: var(--color-Very-dark-blackish-blue);
+}
+.gray{
+    background-color: var(--color-Very-dark-grayish-blue);
+}
+#background{
+    background-image: url(./images/bg-pattern-quotation.svg);
+    
+    background-position: top ;
+    background-position-x: 80%;
+    background-repeat: no-repeat;
+}
+@media screen  and (max-width:400px) {
+    .leftcont{
+        flex-direction:column;
+        padding: 0px;
+        width: 95%;
+    }
+    .biger{
+        min-width: 95%
+    }
+    .section{
+        width: 95%;
+        height: 100%;
+        
+    }
+    .rightcont{
+        width: 95%;
+        margin-left: 5px;
+        padding: 6px;
+    }
+    .right{
+        width: 95%;
+        height: 100%;
+    }
+    .main{
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+    }
+}
